@@ -1,0 +1,19 @@
+
+#help new repo
+
+echo "# HW" >> README.md  # создаёт файл README.md (или добавляет в него текст) - заголовок проекта
+
+git init  # создаёт локальный Git-репозиторий в папке (появляется скрытая папка .git; Git начинает отслеживать проект)
+ 
+git add README.md # подготовь файл README.md для коммита
+
+git commit -m "first commit" # сохраняет снимок проекта (-m → сообщение коммита; "first commit" → описание)
+
+git branch -M main # переименовывает текущую ветку в main (Сейчас стандарт — main, а не master)
+ 
+git remote add origin git@github.com:Inozemtsev-DevOps/HW.git # добавляет удалённый репозиторий (origin → имя сервера; 
+git@github.com:... → SSH-адрес репозитория)
+
+git push -u origin main # отправляет код на GitHub(push → отправить изменения; origin → удалённый сервер; main → ветка;
+-u → запомнить связь (upstream) - в дальнейшем можно просто писать: git push)
+ 
